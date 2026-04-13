@@ -5,3 +5,4 @@ It executes a defined load transient test sequence on each voltage rail of the P
 
 This repo consists of a simulated test report, a simulated CSV file having time stamp, Overshoot, Undershoot, Recovery time, settling time, and a Pass/Fail for each of the mentioned coulumns. It also has some simulated CSV files representing the Time vs Volatge values of the capacitors at each output rails.
 
+It also has the fully functional python script, wherein only the VISA addresses has to be replaced wit hrespect to each instruments.  
