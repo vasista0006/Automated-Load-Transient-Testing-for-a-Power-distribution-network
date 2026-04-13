@@ -1,0 +1,126 @@
+======================================================================
+  PDN LOAD TRANSIENT TEST REPORT  [SIMULATION MODE]
+======================================================================
+  Board Serial No : SN-001
+  Operator        : XYZ
+  Timestamp       : 20260412_215810
+  Input Voltage   : 5.0V
+  Load Step       : 10% to 90% of Imax
+  Captures/Rail   : 10
+======================================================================
+
+RAIL: +3V6  (Vnom=3.6V, Imax=2.5A)
+  Result : PASS  (10/10 captures passed)
+  Limits : Overshoot < 180.0mV | Undershoot < 180.0mV | Recovery < 200.0us | Settling < 500.0us
+
+  Statistics:
+    Parameter                   Min      Max     Mean   StdDev
+    --------------------------------------------------------
+    Overshoot (mV)             4.64     8.12     6.17     0.84
+    Undershoot (mV)           87.91   146.44   122.60    18.36
+    Recovery (us)              0.00     0.00     0.00     0.00
+    Settling (us)            162.00   312.00   231.20    45.50
+
+  Per-Capture Detail:
+      #   Over(mV)  Under(mV)   Rec(us)   Set(us)  Result
+    ----------------------------------------------------
+      1       6.11     128.86       0.0     190.0    PASS
+      2       8.12      95.66       0.0     162.0    PASS
+      3       5.61      87.91       0.0     204.0    PASS
+      4       5.73     146.44       0.0     218.0    PASS
+      5       6.36     127.58       0.0     262.0    PASS
+      6       6.76     127.21       0.0     280.0    PASS
+      7       6.32     106.63       0.0     274.0    PASS
+      8       6.02     131.01       0.0     194.0    PASS
+      9       5.98     133.67       0.0     216.0    PASS
+     10       4.64     141.00       0.0     312.0    PASS
+
+----------------------------------------------------------------------
+
+RAIL: +3V3  (Vnom=3.3V, Imax=3.0A)
+  Result : PASS  (10/10 captures passed)
+  Limits : Overshoot < 165.0mV | Undershoot < 165.0mV | Recovery < 200.0us | Settling < 500.0us
+
+  Statistics:
+    Parameter                   Min      Max     Mean   StdDev
+    --------------------------------------------------------
+    Overshoot (mV)             5.22     7.01     5.94     0.50
+    Undershoot (mV)          103.51   148.09   127.05    15.38
+    Recovery (us)              0.00     0.00     0.00     0.00
+    Settling (us)            172.00   310.00   249.00    45.92
+
+  Per-Capture Detail:
+      #   Over(mV)  Under(mV)   Rec(us)   Set(us)  Result
+    ----------------------------------------------------
+      1       5.79     148.09       0.0     276.0    PASS
+      2       5.96     126.06       0.0     186.0    PASS
+      3       5.87     118.62       0.0     200.0    PASS
+      4       7.01     140.69       0.0     310.0    PASS
+      5       5.97     114.76       0.0     292.0    PASS
+      6       5.73     105.83       0.0     294.0    PASS
+      7       6.69     140.90       0.0     238.0    PASS
+      8       5.56     144.88       0.0     266.0    PASS
+      9       5.65     103.51       0.0     172.0    PASS
+     10       5.22     127.20       0.0     256.0    PASS
+
+----------------------------------------------------------------------
+
+RAIL: +1V8  (Vnom=1.8V, Imax=3.0A)
+  Result : FAIL  (0/10 captures passed)
+  Limits : Overshoot < 90.0mV | Undershoot < 90.0mV | Recovery < 200.0us | Settling < 500.0us
+
+  Statistics:
+    Parameter                   Min      Max     Mean   StdDev
+    --------------------------------------------------------
+    Overshoot (mV)             5.27     6.54     6.06     0.40
+    Undershoot (mV)           91.20   150.13   115.65    20.77
+    Recovery (us)              0.00     0.00     0.00     0.00
+    Settling (us)            238.00   394.00   324.60    49.43
+
+  Per-Capture Detail:
+      #   Over(mV)  Under(mV)   Rec(us)   Set(us)  Result
+    ----------------------------------------------------
+      1       6.54     150.13       0.0     394.0    FAIL
+      2       6.21     100.87       0.0     268.0    FAIL
+      3       6.21     136.71       0.0     238.0    FAIL
+      4       5.74      95.29       0.0     324.0    FAIL
+      5       5.85     146.51       0.0     314.0    FAIL
+      6       5.59     112.31       0.0     272.0    FAIL
+      7       6.30      91.20       0.0     348.0    FAIL
+      8       6.51     121.36       0.0     382.0    FAIL
+      9       5.27      97.20       0.0     370.0    FAIL
+     10       6.36     104.93       0.0     336.0    FAIL
+
+----------------------------------------------------------------------
+
+RAIL: +2V5  (Vnom=2.5V, Imax=1.5A)
+  Result : FAIL  (7/10 captures passed)
+  Limits : Overshoot < 125.0mV | Undershoot < 125.0mV | Recovery < 200.0us | Settling < 500.0us
+
+  Statistics:
+    Parameter                   Min      Max     Mean   StdDev
+    --------------------------------------------------------
+    Overshoot (mV)             5.47     8.27     6.46     0.75
+    Undershoot (mV)           79.72   148.93   115.97    18.84
+    Recovery (us)              0.00     0.00     0.00     0.00
+    Settling (us)            190.00   350.00   277.20    50.15
+
+  Per-Capture Detail:
+      #   Over(mV)  Under(mV)   Rec(us)   Set(us)  Result
+    ----------------------------------------------------
+      1       8.27     124.97       0.0     282.0    PASS
+      2       5.99     124.13       0.0     306.0    PASS
+      3       6.73     148.93       0.0     234.0    FAIL
+      4       7.08      79.72       0.0     218.0    PASS
+      5       6.43     104.32       0.0     282.0    PASS
+      6       6.16     130.25       0.0     328.0    FAIL
+      7       6.59      97.45       0.0     190.0    PASS
+      8       5.82     111.77       0.0     350.0    PASS
+      9       6.09     107.15       0.0     252.0    PASS
+     10       5.47     130.96       0.0     330.0    FAIL
+
+----------------------------------------------------------------------
+
+======================================================================
+  BOARD OVERALL RESULT : FAIL
+======================================================================
